@@ -1,9 +1,7 @@
 ![](./assets/header.png)
 
 # VerticalFox
-[中文文档](readme_ch.md)
-
-Get an Edge like auto-hide vertical tabs bar on Firefox! Powerd by Sidebery, you can have your bookmarks, pinned tabs all in side bar and get a clean, compact look. **Works on MacOS , Windows and Linux**.
+Get an Edge like auto-hide vertical tabs bar on Firefox! Powerd by Sidebery, you can have your bookmarks, pinned tabs all in side bar and get a clean, compact look.
 
 <p align='center'>
    <img src='./assets/dark_theme.gif' style='max-height:480px;'/>
@@ -12,11 +10,14 @@ Get an Edge like auto-hide vertical tabs bar on Firefox! Powerd by Sidebery, you
    <img src='./assets/light_theme.gif' style='max-height:480px;'/>
 </p>
 
-> [!NOTE]
-> Thank you for choosing my theme. However, due to the more and more annoying and absurd design of Firefox CSS selectors along with Firefox updates, I am no longer actively maintaining this project. PRs are still welcome and I will reponse in time. You can also find some very excellent themes projects [here](https://github.com/stars/christorange/lists/firefoxcss).
-
-
 *The auto hide also works on Tree Style Tabs, but you may need to adjust the css to achieve the best look.*
+
+
+## ⚠️ Currently maintained: Windows only
+
+Only Windows is currently maintained, as I am unable to verify operation on other platforms. As a result, the macOS and Linux versions have not been updated.  
+Contributions and test reports from macOS and Linux users are welcome.
+
 
 ## How to apply
 
@@ -39,12 +40,6 @@ Get an Edge like auto-hide vertical tabs bar on Firefox! Powerd by Sidebery, you
 Now you can enjoy your new Firefox!
 
 ## Frequently Asked
-Q: **How to move sidebar to the right?**
-
-A: Before you apply `userChrome.css`, click the header of sidebar, click 'move to right side'. If you have applied `userChrome.css`, find the comment `/*hide the sidebar header*/` then delete or comment out the section between this comment and `/*AUTO HIDE SIDEBAR*/`, the header will appear. 
-
-<br/>
-
 Q: **How to disable sidebar auto-hide?**
 
-A: Go to the comment `/*AUTO HIDE SIDE BAR*/`, delete the next 10 lines of code below it.
+A: Open `about:config`, search for `verticalfox.sidebar.autohide`, and if it doesn’t exist, create it as a Boolean and set it to false.
